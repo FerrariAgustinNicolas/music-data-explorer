@@ -4,7 +4,6 @@ import ArtistHeader from "../components/ArtistHeader";
 import StatCards from "../components/StatCards";
 import TopTracksBarChart from "../components/TopTracksBarChart";
 import TagDistributionChart from "../components/TagDistributionChart";
-import LoadingSkeleton from "../components/LoadingSkeleton";
 import ErrorState from "../components/ErrorState";
 import { fetchArtistOverview } from "../api/lastfm";
 import type { ArtistOverviewResponse } from "../types";

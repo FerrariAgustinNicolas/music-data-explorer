@@ -47,12 +47,9 @@ const AlbumTrackDurationChart = ({ tracks }: AlbumTrackDurationChartProps) => {
               contentStyle={{ background: "#0f172a", border: "1px solid #1f2937", color: "#f8fafc" }}
               labelStyle={{ color: "#f8fafc" }}
               itemStyle={{ color: "#f8fafc" }}
-              formatter={(value: number, _name, props) => [
-                formatDuration(props?.payload?.durationSeconds),
-                "Duration",
-              ]}
+              formatter={(value: number) => [formatDuration(Math.round(value * 60)), "Duration"]}
               labelFormatter={(_, payload) => {
-                const trackName = payload?.[0]?.payload?.name ?? "Track";
+                const trackName = (payload as any)?.[0]?.payload?.name ?? "Track";
                 return trackName;
               }}
             />
