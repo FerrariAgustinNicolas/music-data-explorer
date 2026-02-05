@@ -12,8 +12,8 @@ import type {
   SimilarArtist,
   OutliersInsight,
   Insights,
-} from "../types";
-import { AppError } from "../utils/errors";
+} from "../types.js";
+import { AppError } from "../utils/errors.js";
 
 const LASTFM_BASE_URL = "https://ws.audioscrobbler.com/2.0/";
 

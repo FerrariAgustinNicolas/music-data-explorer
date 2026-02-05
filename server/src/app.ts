@@ -1,8 +1,8 @@
 import express from "express";
 import cors from "cors";
-import apiRoutes from "./routes/api";
-import { rateLimit } from "./middleware/rateLimit";
-import { errorHandler } from "./middleware/errorHandler";
+import apiRoutes from "./routes/api.js";
+import { rateLimit } from "./middleware/rateLimit.js";
+import { errorHandler } from "./middleware/errorHandler.js";
 
 export const createApp = () => {
   const app = express();

@@ -1,8 +1,8 @@
 import { Router } from "express";
-import { asyncHandler } from "../utils/asyncHandler";
-import { searchArtist, searchAlbum, getArtistOverview, getAlbumOverview } from "../services/lastfm";
-import { MemoryCache, buildCacheKey } from "../utils/cache";
-import { AppError } from "../utils/errors";
+import { asyncHandler } from "../utils/asyncHandler.js";
+import { searchArtist, searchAlbum, getArtistOverview, getAlbumOverview } from "../services/lastfm.js";
+import { MemoryCache, buildCacheKey } from "../utils/cache.js";
+import { AppError } from "../utils/errors.js";
 
 const router = Router();
 const cache = new MemoryCache();
